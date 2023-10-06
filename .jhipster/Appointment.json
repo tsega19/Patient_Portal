@@ -1,0 +1,30 @@
+{
+  "applications": "*",
+  "changelogDate": "20230929105315",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "appointment",
+  "fields": [
+    {
+      "fieldName": "reason",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "insuranceChange",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "pattern"],
+      "fieldValidateRulesPattern": "^\\d{3}-\\d{3}-\\d{4}$"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Appointment",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}
